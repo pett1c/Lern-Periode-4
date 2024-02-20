@@ -24,14 +24,14 @@
 *Ich habe bereits oben geantwortet, aber ich neige eher dazu, einen Telegram-Bot zu schreiben. Ich denke, ich sollte mir die Menge und Qualität der Tutorials ansehen, die ich finden kann*
 
 ## 20.2.2024
-- Ich habe mich für ein Thema entschieden: Ich erstelle einen Telegram-Bot mit den üblichen Funktionen.
-- Ich habe die API gewählt: https://github.com/TelegramBots/Telegram.Bot
+Zumindest heute habe ich mich für ein Thema entschieden. Ich werde einen Telegramm-Bot schreiben. Zuerst hatte ich nicht die geringste Idee, was genau ich darin implementieren will, und dann erinnerte ich mich daran, dass ich diese kleine Tradition mit meinen Freunden in unserer Gruppe habe - jeden Montag und Freitag entsprechende Bilder zu schicken. Ich beschloss, einen Bot zu schreiben, der automatisch ein zufälliges Bild aus dem richtigen Ordner auswählt und es zur richtigen Zeit versendet (gegen vier Uhr morgens, wenn alle zur Schule aufstehen). Ich werde auch nur zufällige Bilder zum gleichen Thema, aber nicht direkt mit Montag / Freitag, die zu einer zufälligen Zeit mit einer Abkühlung von etwa vier Stunden gesendet werden wird, zu implementieren.
+Ich habe höchstens einen einfachen Code implementiert, der ein Bot-Token in Telegram nimmt, und ich kann sogar schon auf die Bilder antworten.
 
 ## 27.2.2024
 
-- [ ] Erstes Arbeitspaket
-- [ ] ...
-- [ ] Viertes AP
+- [ ] Tutorials weiter ansehen
+- [ ] Weiter versuchen, Code zu schreiben
+- [ ] Entwerfen ein Bot-Profil
 
 | Testfall-Nummer | Ausgangslage (Given) | Eingabe (When) | Ausgabe (Then) | Erfüllt? |
 | --------------- | -------------------- | -------------- | -------------- | -------- |
