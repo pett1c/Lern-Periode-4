@@ -29,9 +29,17 @@ Ich habe höchstens einen einfachen Code implementiert, der ein Bot-Token in Tel
 
 ## 27.02.2024
 
-- [x] Tutorials weiter ansehen
-- [x] Weiter versuchen, Code zu schreiben
-- [ ] Entwerfen ein Bot-Profil
+- [x] Versuchen, mit [KI](https://gemini.google.com/) Code zu erzeugen. Analysieren.
+- [x] Schauen sich die [Dokumentation](https://telegrambots.github.io/book/1/quickstart.html) an, um genauer zu verstehen, wie genau ich Fotos aus dem Code-Ordner hochladen kann.
+- [x] Schauen sich [dieses](https://youtu.be/eUjshrMUUig?si=gBcF2v5nErr_h7az) Tutorial noch einmal an, um die Grundlagen der Verwendung der API zu verstehen.
+- [x] Um mit der [KI](https://gemini.google.com/) und meinem Freund (ja-ja, der) über bestimmte obskure Punkte zu diskutieren.
+
+| Testfall-Nummer | Ausgangslage (Given) | Eingabe (When) | Ausgabe (Then) | Erfüllt? |
+| --------------- | -------------------- | -------------- | -------------- | -------- |
+| 1 | Gemini (von Google) | Prompt | Ein Code, der nicht funktioniert, der aber auch zum allgemeinen Verständnis beiträgt, denn Gemini verweist auf Quellen. | Ja. |
+| 2 | Dokumentation | Überprüfung der Dokumentation mit einem klaren Ziel | Eine konkrete Antwort wurde nicht gefunden, wohl aber ein Verständnis. | Ja. |
+| 3 | Tutorial | Anschauen des Videos | Ich erinnerte mich an alles und begann, die Basis besser zu verstehen. | Ja. |
+| 4 | KI | Prompt mit Fragen, und die Fragen selbst an einen Freund. | Ich habe nie konkrete Antworten gefunden, ich kann nur auf einen Freund hoffen. | Ja. |
 
 Heute habe ich mir vor allem verschiedene Tutorials und einige Informationen angesehen, und im Allgemeinen habe ich bereits eine Vorstellung davon, wie der Code aussehen sollte. Die Struktur selbst und wie es im Allgemeinen funktionieren sollte, ist klar. Aber was den Code angeht... Ich werde mich weiter mit dem Thema beschäftigen. Meine Idee ist, dass die API Zugriff auf drei Ordner haben soll, in denen sich die benötigten Bilder befinden, und dann, je nach Wochentag, wählt der Bot den benötigten Ordner aus und nimmt ein zufälliges Bild von dort. Klingt etwas kompliziert, aber in der Praxis ist es gar nicht so kompliziert, man muss sich nur ein bisschen mehr mit der API beschäftigen. (113 Wörter)
 
@@ -40,12 +48,7 @@ Heute habe ich mir vor allem verschiedene Tutorials und einige Informationen ang
 - [ ] Weiteres Erlernen der API.
 - [ ] Weiteres Anschauen von Tutorials.
 - [ ] Weitere Versuche, Code zu schreiben.
-
-| Testfall-Nummer | Ausgangslage (Given) | Eingabe (When) | Ausgabe (Then) | Erfüllt? |
-| --------------- | -------------------- | -------------- | -------------- | -------- |
-| 1               |                      |                |                |          |
-| ...             |                      |                |                |          |
-| 4               |                      |                |                |          |
+p.s. Ich ändere es später
 
 ✍️ Heute habe ich... (50-100 Wörter)
 
