@@ -45,14 +45,19 @@ Heute habe ich mir vor allem verschiedene Tutorials und einige Informationen ang
 
 ## 05.03.2024
 
-- [ ] Weiteres Erlernen der API.
-- [ ] Weiteres Anschauen von Tutorials.
-- [ ] Weitere Versuche, Code zu schreiben.
-p.s. Ich ändere es später
+- [x] Von [Gemini](https://gemini.google.com/) geschriebenen Code bearbeiten
+- [x] Besprechung des von mir geschriebenen Codes mit einem Freund und Behebung von Fehlern, die auftreten
+- [x] Weiteres Verständnis der [API](https://telegrambots.github.io/book/1/quickstart.html), um zu verstehen, wie man mit Gruppen arbeitet, nicht nur mit privaten Nachrichten von Benutzern.
+- [x] Suche nach weiteren Tutorials zur Arbeit mit der Zeit (und Timern)
 
-✍️ Heute habe ich... (50-100 Wörter)
+| Testfall-Nummer | Ausgangslage (Given) | Eingabe (When) | Ausgabe (Then) | Erfüllt? |
+| --------------- | -------------------- | -------------- | -------------- | -------- |
+| 1 | Gemini (von Google) | Nicht funktionierender Code | Bearbeitung des Codes | Ja. |
+| 2 | Freund (ha-ha) | Fragen zum Code im Allgemeinen und zu Fehlern, die auftreten | Ich erkannte genauer, wie genau ich mit dem Code arbeiten muss, und kam auch zu einem umfassenderen Verständnis des Codes und der anschließend auftretenden (möglichen) Fehler | Ja. |
+| 3 | API | Arbeit mit Gruppen | Ich recherchierte die verfügbaren Informationen und begann, besser zu verstehen, wie man mit Gruppen arbeitet, im Gegensatz zu privaten Nachrichten mit einem Benutzer. | Ja. |
+| 4 | Suche nach Tutorials | Das nie gefundene Tutorial | Leider konnte ich trotz meiner Suche kein normales Tutorial finden, aus dem ich etwas verstehen würde. | Nein. |
 
-☝️ Vergessen Sie nicht, bis einen ersten Code auf github hochzuladen, und in der Spalte **Erfüllt?** einzutragen, ob Ihr Code die Test-Fälle erfüllt
+Heute habe ich spezifischer mit dem Code gearbeitet, der von Gemini generiert wurde, und habe auch allgemein verstanden, welche Fehler bei der Arbeit mit solchem Code auftreten können, und ich habe auch verstanden, wie genau ich den Code schreiben sollte, um diese Fehler zu vermeiden, aber auch, damit alles so funktioniert, wie es sollte. Außerdem habe ich einige Probleme besprochen und meinem Freund (der bald großartig sein wird, haha) ein paar Fragen zu meinem Code gestellt, auf die ich zwar keine Antwort bekommen habe (weil er auch morgens beschäftigt ist, was logisch ist), aber einige davon konnte er in seiner Freizeit beantworten. Außerdem werde ich heute nach Schulschluss mit ihm weiter an dem Code arbeiten, was mir helfen wird, den Code allgemein zu verstehen und ihn auch tatsächlich zu schreiben. (130 Wörter)
 
 ## Reflexion
 
