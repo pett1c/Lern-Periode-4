@@ -11,7 +11,7 @@ namespace RABEBBOT
 
         static void Main(string[] args)
         {
-            var client = new TelegramBotClient("7099629430:AAE9nsg7Wd3DIkCzYUzLbfoxMNg2-IF-RwE");
+            var client = new TelegramBotClient("HIDDEN_TOKEN");
             client.StartReceiving(Update, Error);
             Console.WriteLine("Hello, World!");
             Console.ReadLine();
