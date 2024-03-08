@@ -8,7 +8,7 @@ using Telegram.Bot.Types;
 
 public class Bot
 {
-    private static readonly string BotToken = "7099629430:AAE9nsg7Wd3DIkCzYUzLbfoxMNg2-IF-RwE";
+    private static readonly string BotToken = "HIDDEN_TOKEN";
     private static readonly long ChatId = -1001610516293;
     private static readonly string[] MondayFolder = Directory.GetFiles("Monday");
     private static readonly string[] FridayFolder = Directory.GetFiles("Friday");
