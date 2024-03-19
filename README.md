@@ -59,6 +59,27 @@ Heute habe ich mir vor allem verschiedene Tutorials und einige Informationen ang
 
 Heute habe ich spezifischer mit dem Code gearbeitet, der von Gemini generiert wurde, und habe auch allgemein verstanden, welche Fehler bei der Arbeit mit solchem Code auftreten können, und ich habe auch verstanden, wie genau ich den Code schreiben sollte, um diese Fehler zu vermeiden, aber auch, damit alles so funktioniert, wie es sollte. Außerdem habe ich einige Probleme besprochen und meinem Freund (der bald großartig sein wird, haha) ein paar Fragen zu meinem Code gestellt, auf die ich zwar keine Antwort bekommen habe (weil er auch morgens beschäftigt ist, was logisch ist), aber einige davon konnte er in seiner Freizeit beantworten. Außerdem werde ich heute nach Schulschluss mit ihm weiter an dem Code arbeiten, was mir helfen wird, den Code allgemein zu verstehen und ihn auch tatsächlich zu schreiben. (130 Wörter)
 
+## 12.03.2024
+
+- [x] Neugestaltung aller Objektnamen (Variablen, Felder, Methoden usw.) gemäss Pascal Case und Camel Case.
+- [x] Aufteilung von Konstanten in separate statische Klassen zur leichteren Änderung.
+- [x] Umbenennung von Objekten (Variablen, Felder, Methoden usw.), so dass sie genau beschreiben, was sie speichern bzw. direkt tun, um die Lesbarkeit des Codes zu verbessern.
+- [x] Verringerung der Anzahl der Zuständigkeiten und Gründe für Änderungen in Methoden.
+
+| Testfall-Nummer | Ausgangslage (Given) | Eingabe (When) | Ausgabe (Then) | Erfüllt? |
+| --------------- | -------------------- | -------------- | -------------- | -------- |
+| 1 | Variablen, Felder, Methoden, usw. | Seltsame und unsinnige Namen | Namen gemäss den Regeln für das Schreiben von Code. | Ja. |
+| 2 | Konstanten | Seltsame und inkongruente Anordnung von Konstanten nach Klassen. | Aufteilung der Konstanten auf separate statische Klassen, um Änderungen zu erleichtern. | Ja. |
+| 3 | Variablen, Felder, Methoden, usw. | Seltsame, obskure und unsinnige Namen, die manchmal nicht beschreiben, was das Objekt tun soll | Umbenennung von Objekten, so dass sie genau beschreiben, was sie speichern / tun, direkt für eine bessere Lesbarkeit des Codes. | Ja. |
+| 4 | Methoden. | Grosse Anzahl von Zuständigkeiten und Gründen für die Änderung von Methoden. | Verringerung der Anzahl der Zuständigkeiten und der Gründe für Änderungen in Methoden. | Ja. |
+
+Heute war ich damit beschäftigt, meinen gesamten Code für die weitere Arbeit mit ihm qualitativ vorzubereiten. Mit den Regeln, nach denen gerade der Code geschrieben werden soll, bzw. dem Finden dieser Regeln - ein Freund hat mir dabei geholfen. Alles andere habe ich von Hand gemacht, gemäß den Regeln für das Schreiben von Code. Als Erstes habe ich alle Namen so geändert, dass sie direkt ihre Aufgabe widerspiegeln, damit es klar und lesbar ist. Als nächstes benannte ich alle Objekte nach Pascal und Camel Case um. Die vorletzte Maßnahme war, alle Konstanten in separate statische Klassen zu verschieben, um die Lesbarkeit zu verbessern, und schließlich habe ich die Anzahl der Verantwortlichkeiten und Gründe für Methoden reduziert. (115 Wörter)
+
+## 19.03.2024
+
+- [x] Der Code wird in kleinere Klassen unterteilt, so dass jede Klasse nur einen Grund für eine Änderung hat. (auch hier wieder SRP-Überlagerung).
+- [x] Verschieben des Bot-Tokens in Umgebungsvariablen für mehr Sicherheit.
+
 ## Reflexion
 
 Formen Sie Ihre Zusammenfassungen in Hinblick auf Ihren VBV zu einem zusammenhängenden Text von 100 bis 200 Wörtern (wieder mit Angabe in Klammern).
