@@ -77,8 +77,8 @@ Heute war ich damit beschäftigt, meinen gesamten Code für die weitere Arbeit m
 
 ## 19.03.2024
 
-- [x] Der Code wird in kleinere Klassen unterteilt, so dass jede Klasse nur einen Grund für eine Änderung hat. (auch hier wieder SRP-Überlagerung).
-- [x] Verschieben des Bot-Tokens in Umgebungsvariablen für mehr Sicherheit.
+- [ ] Der Code wird in kleinere Klassen unterteilt, so dass jede Klasse nur einen Grund für eine Änderung hat. (auch hier wieder SRP-Überlagerung).
+- [ ] Verschieben des Bot-Tokens in Umgebungsvariablen für mehr Sicherheit.
 
 ## Reflexion
 
