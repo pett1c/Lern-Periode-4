@@ -1,83 +1,93 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading;
+﻿using Catdei.Constants;
+using Catdei.Helpers;
+using System.ComponentModel;
 using Telegram.Bot;
 using Telegram.Bot.Types;
 
-public class Bot
+namespace Catdei
 {
-    private static readonly string BotToken = "7099629430:AAE9nsg7Wd3DIkCzYUzLbfoxMNg2-IF-RwE";
-    private static readonly long ChatId = -1001610516293;
-    private static readonly string[] MondayFolder = Directory.GetFiles("Monday");
-    private static readonly string[] FridayFolder = Directory.GetFiles("Friday");
-    private static readonly string[] RandomFolder = Directory.GetFiles("Random");
-    private static readonly Random random = new Random();
-    private static DateTime lastRandomSent = DateTime.Now;
-
-    public static void Main(string[] args)
+    public class Program
     {
-        var botClient = new TelegramBotClient(BotToken);
-
-        botClient.OnMessage += BotOnMessage;
-        botClient.StartReceiving();
-
-        Console.WriteLine("Бот запущен.");
-
-        while (true)
+        public static void Main(string[] args)
         {
-            CheckDayAndSendImage(botClient);
-            CheckRandomImageCooldownAndSend(botClient);
-            Thread.Sleep(1000);
-        }
-    }
+            ITelegramBotClient botClient = new TelegramBotClient(ApiConstants.Token);
+            botClient.StartReceiving(Update, HandleError);
 
-    private static void BotOnMessage(object sender, Telegram.Bot.Args.MessageEventArgs e)
-    {
-        if (e.Message.Text == "/start")
-        {
-            botClient.SendTextMessageAsync(ChatId, "Привет! Я бот для отправки картинок.");
-        }
-    }
+            Console.WriteLine("Бот запущен.");
 
-    private static void CheckDayAndSendImage(TelegramBotClient botClient)
-    {
-        var dayOfWeek = DateTime.Now.DayOfWeek;
-        string[] folder;
+            DateTime lastSentTime = DateTime.Now;
 
-        switch (dayOfWeek)
-        {
-            case DayOfWeek.Monday:
-                folder = MondayFolder;
-                break;
-            case DayOfWeek.Friday:
-                folder = FridayFolder;
-                break;
-            default:
-                return;
+            while (true)
+            {
+                DateTime now = DateTime.Now;
+                string imagePath = GetImagePath(now.DayOfWeek);
+                InputFile image = InputFileHelper.FromPath(imagePath);
+
+                if (IsCooldownElapsed(now, lastSentTime, BotConstants.ImageSendCooldown)) 
+                {
+                    botClient.SendPhotoAsync(ApiConstants.ChatId, image).GetAwaiter().GetResult();
+                }
+                else 
+                {
+                    lastSentTime = now;
+                }
+
+                Thread.Sleep(1000);
+            }
         }
 
-        var image = GetRandomImage(folder);
-        botClient.SendPhotoAsync(ChatId, image);
-    }
-
-    private static void CheckRandomImageCooldownAndSend(TelegramBotClient botClient)
-    {
-        if ((DateTime.Now - lastRandomSent).TotalHours >= 4)
+        private static string GetImagePath(DayOfWeek dayOfWeek) 
         {
-            var image = GetRandomImage(RandomFolder);
-            botClient.SendPhotoAsync(ChatId, image);
-            lastRandomSent = DateTime.Now;
+            IEnumerable<string> paths = GetImagePaths(dayOfWeek);
+            return RandomHelper.GetRandomElement(paths);
         }
-    }
 
-    private static string GetRandomImage(string[] folder)
-    {
-        return folder[random.Next(folder.Length)];
+        private static IEnumerable<string> GetImagePaths(DayOfWeek dayOfWeek) 
+        {
+            if (dayOfWeek == DayOfWeek.Monday) 
+            {
+                return PathConstants.MondayPaths;
+            }
+            else if (dayOfWeek == DayOfWeek.Friday) 
+            {
+                return PathConstants.FridayPaths;
+            }
+            else
+            {
+                return PathConstants.OtherPaths;
+            }
+        }
+
+        private static Task HandleError(ITelegramBotClient client, Exception exception, CancellationToken token)
+        {
+            Console.WriteLine(exception);
+            return Task.CompletedTask;
+        }
+
+        private static async Task HandleMessage(ITelegramBotClient client, Message message)
+        {
+            if (message.Text == "/start")
+            {
+                await client.SendTextMessageAsync(message.Chat.Id, "Привет! Я бот для отправки картинок.");
+            }
+        }
+
+        private static bool IsCooldownElapsed(DateTime now, DateTime lastTime, TimeSpan cooldown) 
+        {
+            double elapsedTimeInHours = (now - lastTime).TotalHours;
+            double cooldownInHours = cooldown.TotalHours;
+
+            return elapsedTimeInHours > cooldownInHours;
+        }
+
+        private static async Task Update(ITelegramBotClient client, Update update, CancellationToken token)
+        {
+            Message? message = update.Message;
+
+            if (message != null)
+            {
+                await HandleMessage(client, message);
+            }
+        }
     }
 }
-
-
-// private static readonly string BotToken = "7099629430:AAE9nsg7Wd3DIkCzYUzLbfoxMNg2-IF-RwE";
-// private static readonly long ChatId = -1001610516293;
