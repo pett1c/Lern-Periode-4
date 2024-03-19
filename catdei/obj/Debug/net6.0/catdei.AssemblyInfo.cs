@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Catdei")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("catdei")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("Catdei")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Catdei")]
+[assembly: System.Reflection.AssemblyProductAttribute("catdei")]
+[assembly: System.Reflection.AssemblyTitleAttribute("catdei")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Создано классом WriteCodeFragment MSBuild.

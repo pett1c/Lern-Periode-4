@@ -82,23 +82,23 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Telegram.Bot >= 19.0.0"
+      "telegram.bot >= 19.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\danya_mschqkt\\.nuget\\packages\\": {}
+    "C:\\Users\\wh01s\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\danya_mschqkt\\source\\repos\\Catdei\\Catdei\\Catdei.csproj",
-      "projectName": "Catdei",
-      "projectPath": "C:\\Users\\danya_mschqkt\\source\\repos\\Catdei\\Catdei\\Catdei.csproj",
-      "packagesPath": "C:\\Users\\danya_mschqkt\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\danya_mschqkt\\source\\repos\\Catdei\\Catdei\\obj\\",
+      "projectUniqueName": "D:\\Igor\\Projects\\RABEBBOT\\Lern-Periode-4\\catdei\\catdei.csproj",
+      "projectName": "catdei",
+      "projectPath": "D:\\Igor\\Projects\\RABEBBOT\\Lern-Periode-4\\catdei\\catdei.csproj",
+      "packagesPath": "C:\\Users\\wh01s\\.nuget\\packages\\",
+      "outputPath": "D:\\Igor\\Projects\\RABEBBOT\\Lern-Periode-4\\catdei\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\danya_mschqkt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\wh01s\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -124,7 +124,7 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
-          "Telegram.Bot": {
+          "telegram.bot": {
             "target": "Package",
             "version": "[19.0.0, )"
           }
@@ -145,7 +145,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
